@@ -20,7 +20,7 @@ conda create -n Editing_auto_pathology python==3.10
 pip install -r requirements.txt
 conda activate Editing_auto_pathology
 ```
-After downloading YOLOv5-7.0 from https://github.com/ultralytics/yolov5, place  Python script and the uploads folder in main into the root of the ./yolov5-7.0 directory.
+After downloading YOLOv5-7.0 from https://github.com/ultralytics/yolov5, place  Python script in main into the root of the ./yolov5-7.0 directory.
 
 ## Step by step tutorial
 
@@ -38,3 +38,6 @@ streamlit run main.py
 ```
 
 Access the application at http://localhost:8501.
+
+### WSI to patch
+The following example assumes that the whole slide images (WSIs) data is organized in well known standard formats (such as .svs, .ndpi, .tiff etc.)
