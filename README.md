@@ -30,4 +30,4 @@ This data can be downloaded from https://gtexportal.org/home/histologyPage
 
 
 
-### Epidermis extraction
+### Access Online
