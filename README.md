@@ -117,3 +117,20 @@ The following example assumes that the patch images data is organized in well kn
             └──...
         └── ...
 
+Select the "Detection" function from the sidebar and place the files you need to detect into the upload box. You can view the uploaded images. Adjust parameters in the sidebar and select the desired weights (distinguished by timestamp). Click "run detection" to perform object detection on the uploaded images. The webpage will display summarized results, and you can download a CSV file.
+
+## Please cite
+
+ Submitted.
+
+## Maintainer
+
+Any questions, please contact [@Rongtao Ye](https://github.com/xumaosan)
+
+## Contributors
+
+Thank you for the helps from Dr. Jiajian Zhou, Dr. Yusen Lin.
+
+## License
+
+[MIT](LICENSE) © Rongtao Ye
