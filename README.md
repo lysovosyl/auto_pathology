@@ -119,6 +119,27 @@ The following example assumes that the patch images data is organized in well kn
 
 Select the "Detection" function from the sidebar and place the files you need to detect into the upload box. You can view the uploaded images. Adjust parameters in the sidebar and select the desired weights (distinguished by timestamp). Click "run detection" to perform object detection on the uploaded images. The webpage will display summarized results, and you can download a CSV file.
 
+Below is an example table for slide_1.csv. 
+
+| index | images |    xmin | ymin | xmax| ymax|    confidence |  | name| area|
+|:------|     :---:      |-----:|           ---: |           ---: |           ---: |-----:|           ---: |           ---: |           ---: |
+| 0     |  tile_12_level0_5896-4523-6616-5243.png    | 305.289856  | 374.140716552734     |  342.514923095703   |  463.612335205078 | 0.435933530330657 | 0     |  fillcle  |  3330.58701133914 |
+| 1     |  tile_12_level0_5896-4523-6616-5243.png    | 15.428744316101  | 203.001434326171     |  105.341537475585   |  326.226593017578 | 0.239176213741302 | 0     |  fillcle  |  11079.5182054651 |
+| 2     |  tile_12_level0_5896-4523-6616-5243.png    | 325.523345947265  | 33.3408126831054     |  443.434539794921   |  165.721862792968 | 0.195653393864631 | 0     |  fillcle  |  15609.2076612603 |
+
+This table includes 10 columns.
+- `index`: The serial number of the detection result.
+- `images`: The name of the detected image.
+- `xmin`: The lower bound of the x-coordinate of the detection bounding box.
+- `ymin`: The lower bound of the y-coordinate of the detection bounding box.
+- `xmax`: The upper bound of the x-coordinate of the detection bounding box.
+- `ymax`: The upper bound of the y-coordinate of the detection bounding box.
+- `confidence`: The confidence score of the detection result.
+- `class_index`: The class index of the detected object.
+- `name`: The class name of the detected object.
+- `area`: The area of the detection bounding box.
+
+
 ## Please cite
 
  Submitted.
