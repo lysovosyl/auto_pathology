@@ -83,3 +83,10 @@ The located_tiles.png file visualizes the sampling locations of the extracted ti
 ### Annotating Patches
 
 This web page does not have an integrated image annotation function and requires manual annotation. In the sidebar's "Labeling" function, a link to the annotation website "Make Sense", https://www.makesense.ai/, is provided.
+Since the YOLOv5 model will be used for object detection later, the annotations need to be exported in YOLOv5 format.
+
+### Model Weight Training
+
+After uploading the images and annotations, adjust the parameters such as the split ratios for the training set, validation set, and test set, as well as the random seed. Click the "确定划分数据集按钮" button, and the program will automatically partition the dataset.
+
+Next, select image augmentation methods and other techniques for image enhancement and noise reduction. Modify the training parameters in the sidebar. Click the "开始训练" button to begin training your custom weights. Once training is complete, the weights will be saved on the server and can be selected for the object detection function in subsequent steps.
