@@ -90,4 +90,6 @@ Since the YOLOv5 model will be used for object detection later, the annotations 
 
 After uploading the images and annotations, adjust the parameters such as the split ratios for the training set, validation set, and test set, as well as the random seed. Click the "确定划分数据集按钮" button, and the program will automatically partition the dataset.
 
-Next, select image augmentation methods and other techniques for image enhancement and noise reduction. Modify the training parameters in the sidebar. Click the "开始训练" button to begin training your custom weights. Once training is complete, the weights will be saved on the server and can be selected for the object detection function in subsequent steps.
+Next, select image augmentation methods and other techniques for image enhancement and noise reduction. Modify the training parameters in the sidebar. Click the "开始训练" button to begin training your custom weights. Once training is complete, the best weights will be saved on the server and can be selected for the object detection function in subsequent steps.
+
+Upon completion of training, key metrics including training curves, the confusion matrix, and the Precision-Recall (PR) curve will be displayed. Displaying the performance of the best weights, such as precision and recall, would provide a more intuitive understanding of the model's effectiveness, though the implementation of log parsing for these specific metrics is complex and has not been implemented.
