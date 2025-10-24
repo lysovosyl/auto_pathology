@@ -40,4 +40,46 @@ streamlit run main.py
 Access the application at http://localhost:8501.
 
 ### WSI to patch
-The following example assumes that the whole slide images (WSIs) data is organized in well known standard formats (such as .svs, .ndpi, .tiff etc.)
+The following example assumes that the whole slide images (WSIs) data is organized in well known standard formats (such as .svs, .ndpi, .tiff etc.) and stored in a folder named DATA_DIRECTORY.
+
+```
+    DATA_DIRECTORY/
+        ├──slide_1.svs
+        ├──slide_1.svs
+        ├──slide_2.svs
+        ├──slide_3.svs
+        └── ...
+        
+```
+
+Select the "H&E to patches" function from the sidebar. Place the WSI images you need to process into the upload box. After all images have been placed, click the "确定上传" button to upload the files to the server. Then, click the "开始切割" button to segment the uploaded WSI images into patches. Upon completion of the segmentation, you can download the results in a ZIP format.
+
+The patches will be saved in ./save_dir.
+
+    save_dir/
+        ├──slide_1
+            ├──1.png
+            ├──2.png
+            ├──3.png
+            └──...
+        ├──slide_2
+            ├──1.png
+            ├──2.png
+            ├──3.png
+            └──...
+        ├──slide_3
+            ├──1.png
+            ├──2.png
+            ├──3.png
+            └──...
+        ├──...
+        ├──located_tiles1.png
+        ├──located_tiles2.png
+        ├──located_tiles3.png
+        └── ...
+
+The located_tiles.png file visualizes the sampling locations of the extracted tiles on the original WSI.
+
+### Annotating Patches
+
+This web page does not have an integrated image annotation function and requires manual annotation. In the sidebar's "Labeling" function, a link to the annotation website "Make Sense", https://www.makesense.ai/, is provided.
