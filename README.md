@@ -146,7 +146,7 @@ This table includes 10 columns.
 
 ## Maintainer
 
-Any questions, please contact [@Rongtao Ye](https://github.com/xumaosan)
+Any questions, please contact [@Rongtao Ye](https://github.com/xumaosan)  [@XiaoNan Yu](https://github.com/shannon-you)
 
 ## Contributors
 
@@ -154,4 +154,4 @@ Thank you for the helps from Dr. Jiajian Zhou, Dr. Yusen Lin.
 
 ## License
 
-[MIT](LICENSE) © Rongtao Ye
+[MIT](LICENSE) © Rongtao Ye @XiaoNan Yu
