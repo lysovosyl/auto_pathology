@@ -97,3 +97,23 @@ Upon completion of training, key metrics including training curves, the confusio
 
 ### Object Detection on Patches
 
+The following example assumes that the patch images data is organized in well known standard formats (such as .jpg, .png etc.) and stored in a folder named DATA_PATCHES
+
+    save_dir/
+        ├──slide_1
+            ├──1.png
+            ├──2.png
+            ├──3.png
+            └──...
+        ├──slide_2
+            ├──1.png
+            ├──2.png
+            ├──3.png
+            └──...
+        ├──slide_3
+            ├──1.png
+            ├──2.png
+            ├──3.png
+            └──...
+        └── ...
+
